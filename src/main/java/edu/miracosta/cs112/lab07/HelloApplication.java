@@ -11,7 +11,7 @@ import javafx.scene.control.Button;
 import javafx.event.EventHandler;            
 import javafx.scene.layout.Pane;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.BorderPane;
+
 
 
 public class HelloApplication extends Application implements ChangeListener<Number>, EventHandler<MouseEvent> { //inheriting core functionality + this class will handle events
@@ -22,7 +22,6 @@ public class HelloApplication extends Application implements ChangeListener<Numb
     Label label = new Label("Hello GUI World!");
     Label label2 = new Label("Button Presses: " + buttonPresses);
     Pane layout = new Pane();
-    BorderPane borderPane = new BorderPane();
     Scene scene = new Scene(layout, 400, 300);
     TextField textField = new TextField("Enter text here"); // TextField for user input
 
